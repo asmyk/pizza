@@ -112,7 +112,7 @@ html {
 }
 
 .row-image-1 {
-  background-image: url("/img/about-1.jpeg");
+  background-image: url("img/about-1.jpeg");
 }
 
 .row-image-2 {
