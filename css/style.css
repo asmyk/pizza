@@ -1,0 +1,157 @@
+body,
+html {
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+
+.parallax {
+  height: 100%;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-img-1 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/img/header-bg.jpeg");
+}
+
+.parallax-img-2 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/img/header-bg2.jpeg");
+}
+.parallax-img-3 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/img/aboutus.jpeg");
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  color: #fff;
+  padding: 1.8rem;
+  font-weight: 700;
+  font-size: 3.75rem;
+}
+
+.subtitle {
+  color: #fff;
+  font-weight: 400;
+  font-size: 2.05rem;
+}
+
+.subtitle-attract {
+  margin-top: 4rem;
+  width: 60%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+
+.block {
+  padding: 6rem 2rem;
+}
+
+.block-title {
+  letter-spacing: 4px;
+  font-weight: 100;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.block-content {
+  font-weight: 300;
+  font-size: 2.25rem;
+}
+
+.block-text {
+  margin-top: 2rem;
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+.row-image {
+  min-height: 334px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row-image-1 {
+  background-image: url("/img/about-1.jpeg");
+}
+
+.row-image-2 {
+  background-image: url("/img/about-2.jpeg");
+}
+
+.row-image-3 {
+  background-image: url("/img/about-3.jpeg");
+}
+
+.row-pizza-1 {
+  background-image: url("/img/pizza-1.jpeg");
+}
+
+.row-pizza-2 {
+  background-image: url("/img/pizza-2.jpeg");
+}
+
+.row-pizza-3 {
+  background-image: url("/img/pizza-3.jpeg");
+}
+
+.row-pizza-4 {
+  background-image: url("/img/pizza-4.jpeg");
+}
+
+.box {
+  margin: 1.5rem;
+  padding: 1.5rem;
+}
+
+.box-title {
+  font-weight: 500;
+  font-size: 1.45rem;
+}
+
+.box-content {
+  margin-top: 1rem;
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
