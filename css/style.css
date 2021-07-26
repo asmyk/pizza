@@ -10,6 +10,20 @@ html {
   text-align: left;
 }
 
+.link,
+.link:visited {
+  color: #fff;
+}
+
+.link:hover {
+  text-shadow: -1px -1px 0 #12a0d7, 1px -1px 0 #12a0d7, -1px 1px 0 #12a0d7,
+    1px 1px 0 #12a0d7;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 .parallax {
   height: 100%;
   position: relative;
@@ -54,7 +68,7 @@ html {
 .caption {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 25%;
   width: 100%;
   text-align: center;
 }
@@ -62,24 +76,36 @@ html {
 .title {
   color: #fff;
   padding: 1.8rem;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 3.75rem;
 }
 
 .subtitle {
   color: #fff;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 2.05rem;
 }
-
 .subtitle-attract {
   margin-top: 4rem;
-  width: 60%;
+  width: 70%;
   background: rgba(0, 0, 0, 0.4);
   padding: 2rem;
   color: #fff;
   font-weight: 100;
   font-size: 1.6rem;
+  position: absolute;
+  bottom: 7%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .caption {
+    top: 7%;
+  }
+  .subtitle-attract {
+    width: auto;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+  }
 }
 
 .block {
@@ -88,15 +114,15 @@ html {
 
 .block-title {
   letter-spacing: 4px;
-  font-weight: 100;
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
+  font-weight: 200;
+  font-size: 1.15rem;
+  margin-bottom: 1.6rem;
   text-transform: uppercase;
 }
 
 .block-content {
-  font-weight: 300;
-  font-size: 2.25rem;
+  line-height: 1.4;
+  font-size: 1.6rem;
 }
 
 .block-text {
