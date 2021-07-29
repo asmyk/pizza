@@ -3,6 +3,15 @@ html {
   height: 100%;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
 .text-center {
   text-align: center;
 }
@@ -153,7 +162,7 @@ html {
 }
 
 .row-image-1 {
-  background-image: url("../img/about-1.jpeg");
+  background-image: url("../img/about-1.jpg");
 }
 
 .row-image-2 {
@@ -161,7 +170,7 @@ html {
 }
 
 .row-image-3 {
-  background-image: url("../img/about-3.jpeg");
+  background-image: url("../img/about-3.jpg");
 }
 
 .row-pizza-1 {
