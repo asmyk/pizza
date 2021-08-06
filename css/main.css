@@ -36,6 +36,14 @@ body {
   font-family: "Fira Sans", sans-serif, Sans-Serif;
 }
 
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
