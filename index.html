@@ -147,217 +147,222 @@
           usłudze.
         </div>
 
-        <div class="block-content">
-          <div class="questionare">
-            <form
-              data-success-redirect=""
-              autocomplete="on"
-              method="POST"
-              action=""
-              novalidate=""
-              onsubmit=""
-              class="pure-form pure-form-aligned"
-            >
-              <fieldset>
-                <div class="pure-g">
-                  <div class="pure-control-group">
-                    <label for="name">Imię</label>
-                    <input
-                      id="name"
-                      class="pure-input-2-3 pure-input-md-1"
-                      name="fname"
-                      x-autocompletetype="given-name"
-                      type="text"
-                      spellcheck="false"
-                      maxlength="30"
-                      data-title="First"
-                      aria-required="true"
-                    />
-                  </div>
-                  <div class="pure-control-group">
-                    <label for="surname">Nazwisko</label>
-                    <input
-                      id="surname"
-                      class="pure-input-2-3"
-                      name="lname"
-                      x-autocompletetype="surname"
-                      type="text"
-                      spellcheck="false"
-                      maxlength="30"
-                      data-title="Last"
-                      aria-required="true"
-                    />
-                  </div>
-
-                  <div class="pure-control-group">
-                    <label for="email"> Email </label>
-
-                    <input
-                      class="pure-input-2-3"
-                      id="email"
-                      name="email"
-                      type="email"
-                      autocomplete="email"
-                      spellcheck="false"
-                      aria-required="true"
-                    />
-                  </div>
-
-                  <div class="pure-control-group">
-                    <label for="subject"> Temat </label>
-
-                    <input
-                      class="pure-input-2-3"
-                      type="text"
-                      id="subject"
-                      aria-required="true"
-                    />
-                  </div>
-
-                  <div class="pure-control-group">
-                    <label for="message"> Wiadomość </label>
-
-                    <textarea
-                      class="pure-input-2-3"
-                      id="message"
-                      placeholder="Hej, organizuje imprezę niespodzianke dla mojej kobiety..."
-                      aria-required="true"
-                      spellcheck="false"
-                      rows="5"
-                    ></textarea>
-                  </div>
-
-                  <div class="pure-control-group">
-                    <label for="phone"> Telefon </label>
-
-                    <input
-                      class="pure-input-2-3"
-                      type="text"
-                      id="phone"
-                      placeholder="223-451-3144"
-                      aria-required="true"
-                    />
-                  </div>
-
-                  <div class="pure-control-group">
-                    <label for="address"> Adres przyjęcia </label>
-
-                    <input
-                      class="pure-input-2-3"
-                      type="text"
-                      id="address"
-                      aria-required="true"
-                    />
-                  </div>
-
-                  <div class="pure-control-group">
-                    <label for="guests"> Ilość gości </label>
-
-                    <select
-                      id="guests"
-                      name="guests"
-                      class="pure-input-2-3"
-                      aria-required="true"
-                    >
-                      <option value="2-6">2-6</option>
-
-                      <option value="6-15">6-15</option>
-
-                      <option value="15-25">15-25</option>
-
-                      <option value="25-35">25-35</option>
-
-                      <option value="35-50">35-50</option>
-
-                      <option value="50+">50+</option>
-
-                      <optgroup label=""></optgroup>
-                    </select>
-                  </div>
-
-                  <div class="pure-control-group">
-                    <label for="budget"> Budzet </label>
-
-                    <select
-                      id="budget"
-                      class="pure-input-2-3"
-                      name="budget"
-                      aria-required="true"
-                    >
-                      <option value="500-1000">500-1000</option>
-
-                      <option value="1000-3000">1000-3000</option>
-
-                      <option value="3000-5000">3000-5000</option>
-
-                      <option value="5000+">5000+</option>
-
-                      <optgroup label=""></optgroup>
-                    </select>
-                  </div>
-
-                  <div class="pure-control-group">
-                    <label> Data </label>
-                    <input
-                      class="pure-input-2-3"
-                      type="date"
-                      maxlength="2"
-                      data-title="Month"
-                      aria-required="true"
-                    />
-                  </div>
-
-                  <div class="pure-control-group">
-                    <label for="party_time"> Godziny przyjęcia </label>
-
-                    <input
-                      class="pure-input-2-3"
-                      type="text"
-                      id="party_time"
-                      placeholder="17-21..."
-                      aria-required="true"
-                    />
-                  </div>
-
-                  <div class="pure-control-group">
-                    <label for="serwis"> Typ serwisu </label>
-
-                    <select id="serwis" name="serwis" class="pure-input-2-3">
-                      <option value="menu wybrane przez kucharza">
-                        Specjalne menu degustacyjne przygotowane przez nas
-                      </option>
-
-                      <option value="">Zastawa rodzinna przy stole</option>
-
-                      <option value="bufet">Bufet</option>
-
-                      <optgroup label=""></optgroup>
-                    </select>
-                  </div>
-
-                  <div class="pure-control-group">
-                    <label for="allergies"> Alergie </label>
-
-                    <input
-                      class="pure-input-2-3"
-                      type="text"
-                      id="allergies"
-                      placeholder="Gluten-free, vegan, nietolerancja laktozy..."
-                    />
-                  </div>
-
-                  <div class="pure-controls">
-                    <button
-                      type="submit"
-                      class="pure-button pure-button-primary"
-                    >
-                      Wyślij
-                    </button>
-                  </div>
+        <div class="questionare">
+          <div class="block-contact text-center">Formularz kontaktowy</div>
+          <br />
+          <form
+            id="contactForm"
+            class="pure-form pure-form-aligned"
+            data-success-redirect=""
+            autocomplete="on"
+            action="/"
+            novalidate=""
+            onsubmit=""
+          >
+            <fieldset>
+              <div class="pure-g">
+                <div class="pure-control-group">
+                  <label for="name">Imię</label>
+                  <input
+                    id="name"
+                    class="pure-input-2-3 pure-input-md-1"
+                    name="fname"
+                    x-autocompletetype="given-name"
+                    type="text"
+                    spellcheck="false"
+                    maxlength="30"
+                    data-title="First"
+                    aria-required="true"
+                    required
+                  />
                 </div>
-              </fieldset>
-            </form>
-          </div>
+                <div class="pure-control-group">
+                  <label for="surname">Nazwisko</label>
+                  <input
+                    id="surname"
+                    class="pure-input-2-3"
+                    name="lname"
+                    x-autocompletetype="surname"
+                    type="text"
+                    spellcheck="false"
+                    maxlength="30"
+                    data-title="Last"
+                    aria-required="true"
+                  />
+                </div>
+
+                <div class="pure-control-group">
+                  <label for="email"> Email </label>
+
+                  <input
+                    class="pure-input-2-3"
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    spellcheck="false"
+                    aria-required="true"
+                    required
+                  />
+                </div>
+
+                <div class="pure-control-group">
+                  <label for="subject"> Temat </label>
+
+                  <input
+                    class="pure-input-2-3"
+                    type="text"
+                    id="subject"
+                    aria-required="true"
+                  />
+                </div>
+
+                <div class="pure-control-group">
+                  <label for="message"> Wiadomość </label>
+
+                  <textarea
+                    class="pure-input-2-3"
+                    id="message"
+                    placeholder="Hej, organizuje imprezę niespodzianke dla mojej kobiety..."
+                    aria-required="true"
+                    spellcheck="false"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="pure-control-group">
+                  <label for="phone"> Telefon </label>
+
+                  <input
+                    class="pure-input-2-3"
+                    type="text"
+                    id="phone"
+                    placeholder="223-451-3144"
+                    aria-required="true"
+                    required
+                  />
+                </div>
+
+                <div class="pure-control-group">
+                  <label for="address"> Adres przyjęcia </label>
+
+                  <input
+                    class="pure-input-2-3"
+                    type="text"
+                    id="address"
+                    aria-required="true"
+                  />
+                </div>
+
+                <div class="pure-control-group">
+                  <label for="guests"> Ilość gości </label>
+
+                  <select
+                    id="guests"
+                    name="guests"
+                    class="pure-input-2-3"
+                    aria-required="true"
+                  >
+                    <option value="2-6">2-6</option>
+
+                    <option value="6-15">6-15</option>
+
+                    <option value="15-25">15-25</option>
+
+                    <option value="25-35">25-35</option>
+
+                    <option value="35-50">35-50</option>
+
+                    <option value="50+">50+</option>
+
+                    <optgroup label=""></optgroup>
+                  </select>
+                </div>
+
+                <div class="pure-control-group">
+                  <label for="budget"> Budzet </label>
+
+                  <select
+                    id="budget"
+                    class="pure-input-2-3"
+                    name="budget"
+                    aria-required="true"
+                  >
+                    <option value="500-1000">500-1000</option>
+
+                    <option value="1000-3000">1000-3000</option>
+
+                    <option value="3000-5000">3000-5000</option>
+
+                    <option value="5000+">5000+</option>
+
+                    <optgroup label=""></optgroup>
+                  </select>
+                </div>
+
+                <div class="pure-control-group">
+                  <label> Data </label>
+                  <input
+                    class="pure-input-2-3"
+                    type="date"
+                    id="date"
+                    maxlength="2"
+                    data-title="Month"
+                    aria-required="true"
+                  />
+                </div>
+
+                <div class="pure-control-group">
+                  <label for="party_time"> Godziny przyjęcia </label>
+
+                  <input
+                    class="pure-input-2-3"
+                    type="text"
+                    id="party_time"
+                    placeholder="17-21..."
+                    aria-required="true"
+                  />
+                </div>
+
+                <div class="pure-control-group">
+                  <label for="serwis"> Typ serwisu </label>
+
+                  <select id="serwis" name="serwis" class="pure-input-2-3">
+                    <option value="menu wybrane przez kucharza">
+                      Specjalne menu degustacyjne przygotowane przez nas
+                    </option>
+
+                    <option value="">Zastawa rodzinna przy stole</option>
+
+                    <option value="bufet">Bufet</option>
+
+                    <optgroup label=""></optgroup>
+                  </select>
+                </div>
+
+                <div class="pure-control-group">
+                  <label for="allergies"> Alergie </label>
+
+                  <input
+                    class="pure-input-2-3"
+                    type="text"
+                    id="allergies"
+                    placeholder="Gluten-free, vegan, nietolerancja laktozy..."
+                  />
+                </div>
+
+                <div class="pure-controls">
+                  <div class="alert">Dziekujemy za wiadomość!</div>
+                </div>
+                <div class="pure-controls">
+                  <button type="submit" class="pure-button pure-button-primary">
+                    Wyślij
+                  </button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </div>
 
@@ -546,7 +551,6 @@
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
 
     <!-- Start of HubSpot Embed Code -->
     <script
@@ -557,28 +561,7 @@
       src="//js-na1.hs-scripts.com/20499969.js"
     ></script>
     <!-- End of HubSpot Embed Code -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      var firebaseConfig = {
-        apiKey: "AIzaSyA48vg2rQloMyUwYSZ4GR04HGG-JOI674Y",
-        authDomain: "vesuvio-18f3e.firebaseapp.com",
-        projectId: "vesuvio-18f3e",
-        storageBucket: "vesuvio-18f3e.appspot.com",
-        messagingSenderId: "1048179665684",
-        appId: "1:1048179665684:web:91f0333cbdd86e2cd8b001",
-        measurementId: "G-R9CE152X32",
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
