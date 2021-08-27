@@ -60,13 +60,7 @@ function submitForm(e) {
     allergies,
   });
 
-  // Show alert
-  document.querySelector(".alert").style.display = "block";
-
-  // Hide alert after 3 seconds
-  setTimeout(function () {
-    document.querySelector(".alert").style.display = "none";
-  }, 3000);
+  alert("Dziekujemy za wiadomość! Odezwiemy się niebawem :)");
 
   // Clear form
   document.getElementById("contactForm").reset();
